@@ -13,7 +13,6 @@ const mongoose = require("mongoose")
     description : {
         type : String,
         required : [true,'Please add a description'],
-        unique : true,
         trim : true,
         maxlength : [500,'Description cannot be more than 50 characters']
     },
