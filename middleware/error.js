@@ -15,6 +15,11 @@ if(err.code === 11000) {
     error = new ErrorResponse(message,400);
 }
 
+if(err.name === 'ValidationError') {
+    message = Object.values(err.errors).map(val => val.message);
+    error = new ErrorResponse(message,400);
+}
+
 res.status(error.statusCode || 500).json({
     success : false,
     message : error.message || 'Internal Server Error'

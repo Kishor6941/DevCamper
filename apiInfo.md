@@ -22,4 +22,6 @@ Routes & Router
 
 https://medium.com/swlh/node-js-router-and-routes-a4a3cfced5c4
 
-
+---------------------
+Async handler (Applying some DRY)
+https://www.acuriousanimal.com/blog/20180315/express-async-middleware
