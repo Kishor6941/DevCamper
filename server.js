@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const bootcamp = require("./routes/bootcamp")
+const bootcamp = require("./routes/bootcamp");
+const course = require("./routes/course");
 const morgan = require('morgan');
 const connectDB = require('./config/db')
 const colors = require('colors');
@@ -15,6 +16,7 @@ if(process.env.NODE_ENV === 'development') {
     app .use(morgan('dev'))
 }
 app.use("/api/v1/bootcamps",bootcamp);
+app.use("/api/v1/courses",course);
 app.use(errorHandler);
 app.listen(PORT,()=> {
     console.log(`server running on port ${PORT}`.blue.bold)

@@ -25,3 +25,8 @@ https://medium.com/swlh/node-js-router-and-routes-a4a3cfced5c4
 ---------------------
 Async handler (Applying some DRY)
 https://www.acuriousanimal.com/blog/20180315/express-async-middleware
+
+ Database seeder 
+  node seeder -i -> insert collection into the database
+  node seeder -d -> remove collection from the database
+   
